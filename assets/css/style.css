@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+    background-color: #fff;
+    direction: rtl;
+
+    
+}
+
+html {
+    overflow: hidden;
+    scroll-behavior:smooth;
+    overflow: auto;
+}
+
+:root{
+    scroll-behavior:smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: 0px;
+}
+
+.header-bar{
+    width:100%;
+    color: white;
+    background-color: #0088ff;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #bebebe;
+
+}
+
+.logo-wbs{
+    width: 150px;
+    height: 55px;
+    background-image: url("http://localhost/ecomweb/assets/logo/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.center-bar{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+header .center-bar button {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    color: black;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+header .center-bar button:hover{
+    color: red;
+}
+
+.ecom {
+    color: #5E17EB;
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+
+}
+  
+.web {
+   display: inline-block;
+   position: relative;
+   font-size: 40px;
+   color: #333;
+}
+
+.title_content{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 25px;
+    color: #333;
+}
+
+.title2_content{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ada9a9;
+    text-align: center;
+}
+
+.content {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+  }
+
+.product-pack {
+    width: 250px;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    padding-top: 10px;
+    transition: box-shadow 0.3s ease;
+    border-radius: 5px;
+    
+  }
+
+.product-pack:hover{
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .product-img {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+  }
+
+.product-img img {
+    padding: 0 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    max-height: 270px;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+
+.product-title {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    flex: 1;
+    color: #333;
+  }
+  
+
+.product-price{
+    line-height: 24px;
+    padding: 0 5px;
+    padding-bottom: 5px;
+
+}
+
+.product-price .orginal-price{
+   font-weight: bold;
+   color: #e52f54;
+   font-size: 17px;
+
+}
+
+.product-price .old-price{
+  font-size: 17px;
+  text-decoration: line-through;
+  color: #897f7f;
+} 
+
+.title-footer{
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.show_prd{
+    width: 80%;
+    margin: 50px auto;
+    height: auto;
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.show_prd > div{
+    width: 50%;
+}
+
+.price_product{
+    color: red;
+    font-size: 18px;
+}
+
+.old_price_product{
+    color: #bebebe;
+    font-size: 30px;
+    text-decoration: line-through;
+}
+
+.quan{
+    width: 35px;
+}
+
+.order-now{
+    display: block;
+    width:80% !important; 
+    padding:15px 20px; 
+    text-align:center;
+    margin-top:15px;
+    font-size:17px; 
+    font-family:'Tajawal', sans-serif; 
+    font-weight:bold; 
+    color:white;
+    border:none;
+    background-color:#7ec855; 
+    cursor:pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .product-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header .center-bar button{
+        display: none;
+    }
+
+    .center-bar p{
+        text-align: center;
+    }
+
+    .title2_content{
+        font-size: 17px;
+        color: #ccc;
+    }
+
+    .title_content{
+        font-size: 30px;
+    }
+    
+    .show_prd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+  }
+
